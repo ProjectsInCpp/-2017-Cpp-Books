@@ -1,6 +1,7 @@
-#include <iostream>
+#ifndef SIDDHARTA_RAO_SHIFTING
+#define SIDDHARTA_RAO_SHIFTING
 
-constexpr const char EOL = '\n';
+#include "Utils.hpp"
 
 namespace shifting
 {
@@ -18,14 +19,11 @@ int devideBy(int inVal, int shift)
 void start()
 {
 	std::cout << "*************** SHIFTING ***************" << EOL;
-	std::cout << "4 * 2^3 = " << multiplyBy(4, 3) << EOL;
-	std::cout << "***************" << EOL << EOL;
-
-	std::cout << "16 / 2^2 = " << devideBy(16, 2) << EOL;
-	std::cout << "***************" << EOL;
-
-	std::cout << "16 / 2^(-2) = " << multiplyBy(16, -1) << EOL;
-	std::cout << "***************" << EOL;
+	std::cout << "4 * 2^3 = " << multiplyBy(4, 3) << " ==  4 << 3"<< EOL ;
+	std::cout << "16 / 2^2 = " << devideBy(16, 2) << " ==  16 >> 2 "<< EOL;
+	std::cout << "16 / 2^(-2) = " << multiplyBy(16, -1) << " Shifting by minus value, UB " << EOL << EOL;
 }
 
 }
+
+#endif  // SIDDHARTA_RAO_SHIFTING
