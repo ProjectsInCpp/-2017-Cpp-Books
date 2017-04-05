@@ -4,7 +4,9 @@
 int main()
 {
 	shifting::start();
-	smartPointers::start();
+
+	smartPointers::passingInArgs::start();
+	smartPointers::referencesToThem::start();
 
 	system("pause");
     return 0;

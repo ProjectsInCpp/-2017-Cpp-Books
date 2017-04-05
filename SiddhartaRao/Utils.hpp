@@ -9,7 +9,17 @@ constexpr const int MILLION= 1'000'000;
 
 class WrapperForInteger
 {
+public:
+	int state;
 
+	WrapperForInteger()
+	{
+	}
+
+	~WrapperForInteger()
+	{
+
+	}
 };
 
 #endif  // SIDDHARTA_RAO_UTILS
