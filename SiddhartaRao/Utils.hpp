@@ -11,15 +11,6 @@ class WrapperForInteger
 {
 public:
 	int state;
-
-	WrapperForInteger()
-	{
-	}
-
-	~WrapperForInteger()
-	{
-
-	}
 };
 
 #endif  // SIDDHARTA_RAO_UTILS
